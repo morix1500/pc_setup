@@ -1,0 +1,5 @@
+- name: local pc
+  hosts: localhost
+  become: yes
+  roles:
+    - { tags: "chrome", role: install-chrome }
