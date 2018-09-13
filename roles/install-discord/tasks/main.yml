@@ -1,0 +1,9 @@
+- name: discord dependencies packages
+  apt:
+    name: "{{ item }}"
+  with_items:
+    - "libgconf-2-4"
+    - "libappindicator1"
+
+- name: install discrod
+  shell: snap install discord
