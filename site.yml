@@ -2,6 +2,7 @@
   hosts: localhost
   become: yes
   roles:
+    - { tags: "dev-tools", role: install-develop-tools }
     - { tags: "chrome", role: install-chrome }
     - { tags: "slack", role: install-slack }
     - { tags: "discord", role: install-discord }
