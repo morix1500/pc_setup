@@ -3,3 +3,4 @@
   become: yes
   roles:
     - { tags: "chrome", role: install-chrome }
+    - { tags: "slack", role: install-slack }
