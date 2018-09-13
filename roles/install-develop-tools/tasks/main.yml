@@ -1,3 +1,14 @@
 - name: install tmux
   apt:
-    name: tmux
+    name: "{{ item }}"
+  with_items:
+    - "tmux"
+    - "xsel"
+
+- name: copy tmux.conf
+  copy:
+    src: tmux/tmux.conf
+    dest: "/home/{{ ansible_ssh_user }}/.tmux.conf"
+    owner: "{{ ansible_ssh_user }}"
+    group: "{{ ansible_ssh_user }}"
+
