@@ -1,0 +1,12 @@
+- name: install node
+  apt:
+    name: "{{ item }}"
+  with_items:
+    - "nodejs"
+    - "npm"
+
+- name: install stable version
+  shell: npm cache clean && npm install -g n && n stable
+
+- name: update npm
+  shell: npm update -g npm
