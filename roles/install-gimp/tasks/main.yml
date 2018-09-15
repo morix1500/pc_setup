@@ -1,0 +1,7 @@
+- name: add repository
+  shell: add-apt-repository ppa:otto-kesselgulasch/gimp
+
+- name: install gimp
+  apt:
+    name: gimp
+    update_cache: yes

@@ -6,5 +6,6 @@
     - { tags: "chrome", role: install-chrome }
     - { tags: "slack", role: install-slack }
     - { tags: "discord", role: install-discord }
+    - { tags: "gimp", role: install-gimp }
     - { tags: "npm", role: install-npm }
     - { tags: "docker", role: install-docker }
