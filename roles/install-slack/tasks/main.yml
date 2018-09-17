@@ -1,2 +1,8 @@
-- name: install slack
-  shell: snap install slack --classic
+- name: download
+  get_url:
+    url: https://downloads.slack-edge.com/linux_releases/slack-desktop-3.3.1-amd64.deb
+    dest: /tmp/slack.deb
+
+- name: install
+  apt:
+    deb: /tmp/slack.deb
