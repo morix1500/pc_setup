@@ -12,3 +12,6 @@
     owner: "{{ ansible_ssh_user }}"
     group: "{{ ansible_ssh_user }}"
 
+- name: install mysql-client
+  apt:
+    name: "mysql-client"

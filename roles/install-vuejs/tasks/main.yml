@@ -1,0 +1,6 @@
+- name: global install
+  npm:
+    name: "{{ item }}"
+    global: yes
+  with_items:
+    - "vue-cli"

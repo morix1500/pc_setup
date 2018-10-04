@@ -10,3 +10,4 @@
     - { tags: "npm", role: install-npm }
     - { tags: "docker", role: install-docker }
     - { tags: "go", role: install-golang, go_version: "1.11", dep_version: "0.5.0" }
+    - { tags: "vuejs", role: install-vuejs }
